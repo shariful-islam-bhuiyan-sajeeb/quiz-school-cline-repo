@@ -1,29 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { toast } from 'react-toastify';
+import { BeakerIcon, EyeIcon } from '@heroicons/react/24/solid'
+
 
 const Questions = ({ quizQuestion }) => {
-    console.log(quizQuestion);
-
+    const [count,setCount]=useState('')
     const { question, options, correctAnswer } = quizQuestion;
     // console.log(question);
-
     const questionError = correctAnswer.replaceAll(' ','')
     const getInnerText =(btn)=>{
         const btnError = btn.replaceAll(' ','');
-        
-        
         if(questionError === btnError){
            toast.success('Congratulation your!!',{autoClose:500} )
         }else{
             toast.warning('Wrong answer your!!', { autoClose: 500 })
         }
+    }
 
+    const currectAnswer =()=>{
+        
     }
   
     return (
         <div className='border-2 border-gray-300 rounded-lg px-4 py-6 my-20 lg:w-3/4 mx-auto md:w-11/12  text-center text-2xl  shadow-xl '> 
-            <div>
-                <p className='font-semibold pb-6 '> {question}</p>
+            <div className='flex justify-between'>
+                <p className='font-semibold pb-6 text-center '> {question}</p>
+                <p>  <EyeIcon onClick={() => currectAnswer} className="h-6 w-6 text-blue-500" /></p>
                 
             </div>
              <div className='grid md:grid-cols-2 gap-4 pt-4'>
