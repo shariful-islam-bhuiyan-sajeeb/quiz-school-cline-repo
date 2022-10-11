@@ -8,6 +8,9 @@ import Home from './componets/Home/Home';
 import Statistics from './componets/Statistics/Statistics';
 import About from './componets/About/About';
 import Blog from './componets/Blog/Blog';
+import HeaderImages from './componets/HeaderImages/HeaderImages';
+import Quiz from './componets/Quiz/Quiz';
+import Questions from './componets/Questions/Questions';
 
 function App() {
   const router = createBrowserRouter([
@@ -19,15 +22,22 @@ function App() {
      element:<Main></Main>,
      children:[
        {path: '/header',element: <Header></Header>},
+       {path:'/headerImages', element:<HeaderImages></HeaderImages>},
+       { path: '/', element: <Home></Home> },
        {path:'home',element:<Home></Home>},
        {path:'topics', element:<Topics></Topics>},
-       {path:'statistics', element:<Statistics></Statistics>},
-      {path:'about', element:<About></About>},
-      {path:'blog', element:<Blog></Blog>},
-      {path:''}
+       {path:'statistics', 
+       element:<Statistics></Statistics>},
+       {path:'about', element:<About></About>},
+       {path:'blog', element:<Blog></Blog>},
+
+       {path:'quiz/:id',
+        loader :({params})=>{
+        return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+       },element:<Quiz></Quiz>},
      ]
     },
-    
+    {path:'*', element: <div>Thise is route not Fount.</div>}
   ])
   return (
     <div className="App">
