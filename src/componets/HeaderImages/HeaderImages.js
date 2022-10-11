@@ -43,7 +43,6 @@ const HeaderImages = () => {
                     </div>
                 </div>
             </div>
-            
         </div>
     );
 };
