@@ -12,6 +12,7 @@ import HeaderImages from './componets/HeaderImages/HeaderImages';
 import Quiz from './componets/Quiz/Quiz';
 import Questions from './componets/Questions/Questions';
 
+
 function App() {
   const router = createBrowserRouter([
     {
