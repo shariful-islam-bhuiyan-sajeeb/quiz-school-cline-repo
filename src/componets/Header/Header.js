@@ -22,9 +22,9 @@ const Header = () => {
                 <div className={`flex md:flex-row flex-col     w-full justify-center duration-500 ease-in-out  z-50 md:static absolute gap-5 ${open ? "bg-slate-200 top-12" : "-top-56"
                     }`}>
                     <Link className='px-4 text-3xl font-semibold text-black hover:bg-green-500  ' to='home'>Home</Link>
-                    {/* <Link className='px-4 text-3xl font-semibold text-black hover:bg-green-500 ' to='topics'>Topics</Link> */}
+                   
                     <Link className='px-4 text-3xl font-semibold text-black hover:bg-green-500 ' to='Statistics'>Statistics</Link>
-                    <Link className='px-4 text-3xl font-semibold text-black hover:bg-green-500 ' to='about'>About</Link>
+                    {/* <Link className='px-4 text-3xl font-semibold text-black hover:bg-green-500 ' to='about'>About</Link> */}
                     <Link className='px-3 text-3xl font-semibold text-black hover:bg-green-500 ' to='blog'>Blog</Link>
                 </div>
             </div>
