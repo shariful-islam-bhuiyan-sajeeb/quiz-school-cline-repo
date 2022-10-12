@@ -27,8 +27,8 @@ const Questions = ({ quizQuestion }) => {
         <div className='border-2 border-gray-300 bg-rose-100  rounded-lg px-4 py-6 my-20 lg:w-3/4 mx-auto md:w-11/12  text-center text-2xl  shadow-xl relative '> 
             <div className='flex justify-between '>
                 <p className='font-semibold pb-6 text-center '> {question}</p>
-                <p className='border-2 border-gray-100 px-2 py-1 rounded-full'> <EyeIcon onClick={() => eyeCurrectAnswer(correctAnswer) } className="h-6 w-6 text-blue-500" /></p>
-                <p className='absolute right-16'> {count}</p>
+                <p className='border-2 border-gray-100 bg-slate-200 px-2 py-1 rounded-full'> <EyeIcon onClick={() => eyeCurrectAnswer(correctAnswer) } className="h-6 w-6 text-blue-500" /></p>
+                <p className='absolute right-16 '> {count}</p>
             </div>
              <div className='grid md:grid-cols-2 gap-4 pt-4'>
                 {
