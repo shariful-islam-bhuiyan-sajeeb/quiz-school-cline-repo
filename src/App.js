@@ -12,6 +12,7 @@ import HeaderImages from './componets/HeaderImages/HeaderImages';
 import Quiz from './componets/Quiz/Quiz';
 import Questions from './componets/Questions/Questions';
 import Footer from './componets/Footer/Footer';
+import ErrorPage from './componets/ErrorPage/ErrorPage';
 
 
 function App() {
@@ -40,7 +41,7 @@ function App() {
        
      ]
     },
-    {path:'*', element: <div>Thise is route not Fount.</div>}
+    {path:'*', element: <ErrorPage></ErrorPage>}
   ])
   return (
     <div className="App">
