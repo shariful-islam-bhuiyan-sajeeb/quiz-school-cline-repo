@@ -11,6 +11,7 @@ import Blog from './componets/Blog/Blog';
 import HeaderImages from './componets/HeaderImages/HeaderImages';
 import Quiz from './componets/Quiz/Quiz';
 import Questions from './componets/Questions/Questions';
+import Footer from './componets/Footer/Footer';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         loader :({params})=>{
         return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
        },element:<Quiz></Quiz>},
+       
      ]
     },
     {path:'*', element: <div>Thise is route not Fount.</div>}

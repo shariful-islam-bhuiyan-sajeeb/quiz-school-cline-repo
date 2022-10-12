@@ -7,8 +7,7 @@ const HeaderImages = () => {
                 <img
                     src="https://images.pexels.com/photos/3747463/pexels-photo-3747463.jpeg"
                     className="absolute inset-0 object-cover w-3/4 mx-auto h-full"
-                    alt=""
-                />
+                    alt=""/>
                 <div className="relative bg-gray-900 bg-opacity-75">
                     <div className="px-4 py-16 mx-auto w-3/4   md:px-24 lg:px-8 lg:py-20">
                         <div className="flex flex-col items-center justify-between xl:flex-row">
@@ -38,7 +37,6 @@ const HeaderImages = () => {
                                     </svg>
                                 </a>
                             </div>
-                            
                         </div>
                     </div>
                 </div>

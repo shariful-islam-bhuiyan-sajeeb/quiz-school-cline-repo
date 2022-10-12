@@ -2,6 +2,7 @@ import { faArrowRight, faArrowRightArrowLeft } from '@fortawesome/free-solid-svg
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 import HeaderImages from '../HeaderImages/HeaderImages';
 import { LoderDataContext } from '../Layout/Main';
 
@@ -18,10 +19,10 @@ const Home = () => {
                           <div className='flex justify-between items-center  py-3 px-2'><h1 className='text-2xl text-black'>{quiz.name}</h1>
                             <Link to={`/quiz/${quiz.id}`}><button className=' px-8 text-2xl font-bold text-black py-3 rounded-lg bg-blue-500 '><span> Start Quiz</span> <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon> </button></Link>
                           </div>
-
                           </div> )
                 }
             </div>
+            <Footer></Footer>
 
         </div>
     );
