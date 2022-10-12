@@ -6,3 +6,9 @@ website live link name: b6-quiz-creackerz-shariful4345.
 #Then i used a chart in th e form of statistics where the card questions were shown i n the form of a chart.
 
 #There is a blog compount there are some questions and answers to click on the bolg in the header side.
+
+
+#used - taiwind ,deisy ui
+#used - font Awesome,
+#used - font style,
+#used - mamba footer.
