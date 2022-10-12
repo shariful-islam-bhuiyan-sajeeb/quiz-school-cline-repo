@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div className=''>
             <HeaderImages></HeaderImages>
-            <div className='grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 gap-4 md:px-16 bg-'>
+            <div className='grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 gap-4 md:px-16 py-10 '>
                 {
                     loadQuiz.map(quiz => <div className='bg-purple-200 rounded-lg shadow-lg' key={quiz.id}>
                          <img className='w-full p-4  shadow-md ' src={quiz.logo}  alt="" />
