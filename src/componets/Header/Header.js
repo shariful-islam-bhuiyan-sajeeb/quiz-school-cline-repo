@@ -10,7 +10,7 @@ const Header = () => {
             </div>
             <div className=''>
                 <Link className='px-4 text-3xl font-semibold text-black hover:bg-green-500  ' to='home'>Home</Link>
-                <Link className='px-4 text-3xl font-semibold text-black hover:bg-green-500 ' to='topics'>Topics</Link>
+                {/* <Link className='px-4 text-3xl font-semibold text-black hover:bg-green-500 ' to='topics'>Topics</Link> */}
                 <Link className='px-4 text-3xl font-semibold text-black hover:bg-green-500 ' to='Statistics'>Statistics</Link>
                 <Link className='px-4 text-3xl font-semibold text-black hover:bg-green-500 ' to='about'>About</Link>
                 <Link className='px-3 text-3xl font-semibold text-black hover:bg-green-500 ' to='blog'>Blog</Link>

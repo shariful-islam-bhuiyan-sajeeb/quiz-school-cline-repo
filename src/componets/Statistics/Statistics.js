@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { useLoaderData } from 'react-router-dom';
 import { Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 import { LoderDataContext } from '../Layout/Main';
 
@@ -8,8 +7,8 @@ const Statistics = () => {
     const {total}=loadQuiz[0]
    
     return (
-        <div>
-           <LineChart width={500} height={300} data={loadQuiz} > 
+        <div className='bg-slate-200 p-10'>
+           <LineChart  width={500} height={300} data={loadQuiz} > 
                   
                 <Line type="monotone" dataKey="total" stroke="#82ca9d" />
                 <XAxis dataKey="name" />

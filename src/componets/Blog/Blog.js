@@ -21,10 +21,12 @@ const Blog = () => {
             </div>
             <div tabIndex={0} className="collapse  collapse-arrow w-3/4 mx-auto border  border-base-300     bg-base-100 rounded-box">
                 <div className="collapse-title text-2xl font-semibold">
-                    How does context api work?
+                   What is react useRef hook??
                 </div>
                 <div className="collapse-content text-xl">
-                    <p>The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux.</p>
+                    <p>The useRef Hook allows you to persist values between renders.
+                        It can be used to store a mutable value that does not cause a re-render when updated.
+                        It can be used to access a DOM element directly.</p>
                 </div>
             </div>
         </div>

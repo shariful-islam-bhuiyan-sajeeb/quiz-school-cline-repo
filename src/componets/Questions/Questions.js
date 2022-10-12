@@ -5,16 +5,16 @@ import { BeakerIcon, EyeIcon } from '@heroicons/react/24/solid'
 
 const Questions = ({ quizQuestion }) => {
     const [count,setCount]=useState('')
-    // console.log(count);
+   
     const { question, options, correctAnswer } = quizQuestion;
-    // console.log(question);
+    
     const questionError = correctAnswer.replaceAll(' ','')
     const getInnerText =(btn)=>{
         const btnError = btn.replaceAll(' ','');
         if(questionError === btnError){
-           toast.success('Congratulation your!!',{autoClose:500} )
+           toast.success('Congratulation you now click right answer!!',{autoClose:800} )
         }else{
-            toast.warning('Wrong answer your!!', { autoClose: 500 })
+            toast.warning('Wrong answer', { autoClose: 500 })
         }
     }
 
